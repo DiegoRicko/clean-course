@@ -16,11 +16,7 @@ export class PostService {
 
     async getPosts() {
         
-        // const jsonDB = new LocalDataBaseService();
-        // const jsonDB = new JsonDatabaseService();
-        // this.posts = await jsonDB.getPost();
         this.posts = await this.postProvider.getPosts();
-
 
         return this.posts;
     }
